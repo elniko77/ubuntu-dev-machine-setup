@@ -100,19 +100,6 @@
     name: "{{ base_developer_tools_pip3 }}"
     executable: pip3
 
-# Fix for bat syntax highlighting tool; Ubuntu packages it as batcat instead of just bat
-- name: create symlink for bat
-  ansible.builtin.file:
-    src: /usr/bin/batcat
-    dest: /usr/bin/bat
-    state: link
-    force: no
-
-- name: set nc to point to nmap's netcat implementation
-  community.general.alternatives:
-    name: nc
-    path: /usr/bin/ncat
-
 - name: create .ssh dir
   ansible.builtin.file:
     path: "~{{ local_username }}/.ssh"
