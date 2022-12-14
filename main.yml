@@ -1,5 +1,5 @@
 ---
-- import_playbook: base.yml
+#- import_playbook: base.yml
 #- import_playbook: hashicorp.yml
 #- import_playbook: terminal_customizations.yml
 #- import_playbook: vim.yml
@@ -9,5 +9,5 @@
 #- import_playbook: privacy.yml
 - import_playbook: security.yml
 - import_playbook: snaps.yml
-- import_playbook: post_install.yml
+#- import_playbook: post_install.yml
 ...
