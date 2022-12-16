@@ -28,6 +28,7 @@ base_system_tools_laptop:
 
 base_download_tools:
   - speedtest-cli
+  - elinks
   - wget
 
 base_developer_tools:
