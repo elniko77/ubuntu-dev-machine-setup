@@ -70,12 +70,6 @@
     state: present
     force_apt_get: yes
 
-- name: install productivity tools
-  ansible.builtin.apt:
-    name: "{{ base_productivity_tools }}"
-    state: present
-    force_apt_get: yes
-
 - name: install system tools
   ansible.builtin.apt:
     name: "{{ base_system_tools }}"
@@ -135,11 +129,12 @@
     state: present
     force_apt_get: yes
 
-- name: install media packages
+- name: install gui packages
   ansible.builtin.apt:
-    name: "{{ base_media_tools }}"
+    name: "{{ base_gui_tools }}"
     state: present
     force_apt_get: yes
+  when: gui_mode
 
 - block:
     - name: accept licence for virtualbox ext pack

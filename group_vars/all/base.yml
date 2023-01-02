@@ -7,24 +7,17 @@ base_archiving_tools:
   - unrar
   - unzip
 
-base_productivity_tools:
-  - libreoffice
-
 base_system_tools:
   - fatrace
   - gnome-calculator
   - gufw
   - progress
   - pwgen
-  #- syncthing
 
 base_system_tools_laptop:
-#  - cpufrequtils
-#  - powertop
   - tlp
   - tlp-rdw
   - acpi-call-dkms  # for newer ThinkPads (X220/T420 and later)
-#  - tp-smapi-dkms  # for older ThinkPads
 
 base_download_tools:
   - speedtest-cli
@@ -47,7 +40,6 @@ base_developer_tools:
   - powerline
   - python3-pep8
   - python3-pip
-  - remmina
   - sshpass
   - sshuttle
   - tmux
@@ -61,10 +53,14 @@ base_virtualization_tools:
   - docker.io
   - docker-compose
 
-base_media_tools:
+base_gui_tools:
+  - vlc
   - gimp
   - ubuntu-restricted-extras
-  - vlc
+  - gnome-shell-extension-manager
+  - libreoffice
+  - remmina
+
 
 base_permanent_night_light:
   night_light_enabled: False              # set this to True for permanently turning on night light

@@ -25,7 +25,6 @@ microk8s_plugins:
   knative: false                          # The Knative framework on Kubernetes.
   kubeflow: false                         # Kubeflow for easy ML deployments
   linkerd: false                          # Linkerd is a service mesh for Kubernetes and other frameworks
-  metallb: "metallb:192.168.31.109-192.168.31.109" #                # Loadbalancer for your Kubernetes cluster
   multus: false                           # Multus CNI enables attaching multiple network interfaces to pods
   prometheus: false                       # Prometheus operator for monitoring and logging
   traefik: false                          # another ingress
